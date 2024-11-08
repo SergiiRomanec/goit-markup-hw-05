@@ -35,29 +35,18 @@ img {
     margin: 0 auto;
 }
 
-
-.adventures {
-padding-top: 120px;
-padding-bottom: 120px;
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
-.team {
-padding-top: 120px;
-padding-bottom: 120px;
-}
-
-.portfolio {
-padding-top: 120px;
-padding-bottom: 120px;
-}
-
-/*-------------------HEADER-------------------*/
+/* ---------------------------------------------HEADER--------------------------------------------- */
 
 .header {
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
-        box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
-            0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -65,12 +54,12 @@ padding-bottom: 120px;
     align-items: center;
 }
 
-.header-navigation {
+.nav {
     display: flex;
     align-items: center;
 }
 
-.header-logo-first {
+.nav-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -81,21 +70,19 @@ padding-bottom: 120px;
     padding-top: 24px;
     padding-bottom: 24px;
     margin-right: 76px;
-
 }
 
-.header-logo-second {
+.nav-logo-item {
     color: #2e2f42;
 }
 
-.header-navigation-list {
+.nav-list {
     display: flex;
     align-items: center;
     gap: 40px;
 }
 
-
-.header-navigation-link {
+.nav-link {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -108,12 +95,11 @@ padding-bottom: 120px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.range {
+.active {
     color: #404bbf;
 }
 
-.range::after {
+.active::after {
     content: "";
     display: block;
     width: 100%;
@@ -125,23 +111,23 @@ padding-bottom: 120px;
     bottom: -1px;
 }
 
-.header-navigation-link:hover,
-.header-navigation-link:focus {
+.nav-list-item .nav-link:hover,
+.nav-list-item .nav-link:focus {
     color: #404bbf;
 }
 
-.contacts {
+.contact-info {
     font-style: normal;
     margin-left: auto;
 }
 
-.contacts-list {
+.contact-info-list {
     display: flex;
-    align-items:center;
+    align-items: center;
     gap: 40px;
 }
 
-.contacts-list-link {
+.contact-info-link {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -152,13 +138,15 @@ padding-bottom: 120px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-list-item .contacts-list-link:hover,
-.contacts-list-item .contacts-list-link:focus {
+.contact-info-item .contact-info-link:hover,
+.contact-info-item .contact-info-link:focus {
     color: #404bbf;
 }
 
-.solutions {
-background: #2e2f42;
+/* ---------------------------------------------HERO--------------------------------------------- */
+
+.hero {
+    background: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/people-office.jpg);
@@ -171,22 +159,22 @@ background: #2e2f42;
     margin: 0 auto;
 }
 
-.solution-title {
+.hero-title {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
-    padding-bottom: 48px;
+    margin-bottom: 48px;
     display: block;
     max-width: 496px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.solution-btn {
-font-family: "Roboto", sans-serif;
+.hero-button {
+    font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -205,10 +193,12 @@ font-family: "Roboto", sans-serif;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.solution-btn:hover,
-.solution-btn:focus {
-    background: #404bbf;
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404bbf;
 }
+
+/* ---------------------------------------------ADVANTAGES--------------------------------------------- */
 
 .visually-hidden {
     position: absolute;
@@ -223,13 +213,13 @@ font-family: "Roboto", sans-serif;
     overflow: hidden;
 }
 
-.adventures-list {
+.advantages-list {
     display: flex;
     justify-content: center;
     gap: 24px;
 }
 
-.adventures-list-item {
+.advantages-item {
     width: calc((100% - 72px) / 4);
 }
 
@@ -245,7 +235,7 @@ font-family: "Roboto", sans-serif;
     justify-content: center;
 }
 
-.adventures-subtitle {
+.advantages-subtitle {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
@@ -254,16 +244,16 @@ font-family: "Roboto", sans-serif;
     margin-bottom: 8px;
 }
 
-.adventures-text {
-    font-weight: 400;
+.advantages-descr {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
 
+/* ---------------------------------------------OUR TEAM--------------------------------------------- */
+
 .team {
-    background-color: #f4f4fd;
+    background: #f4f4fd;
 }
 
 .team-title {
@@ -271,8 +261,8 @@ font-family: "Roboto", sans-serif;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-align: center;
+    color: #2e2f42;
     text-transform: capitalize;
     margin-bottom: 72px;
 }
@@ -284,19 +274,19 @@ font-family: "Roboto", sans-serif;
     gap: 24px;
 }
 
-.team-list-item {
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-width: calc((100% - 72px) / 4);
-background-color: #fff;
- border-radius: 0 0 4px 4px;
-box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+.team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: calc((100% - 72px) / 4);
+    background-color: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.people-pro {
+.member-descr {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -304,21 +294,20 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     padding: 32px 0;
 }
 
-.people {
+.member-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-align: center;
+    color: #2e2f42;
     margin-bottom: 8px;
 }
 
-.profession {
+.member-role {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
     text-align: center;
     margin-bottom: 8px;
 }
@@ -351,14 +340,16 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     fill: #f4f4fd;
 }
 
+/* ---------------------------------------------OUR PORTFOLIO--------------------------------------------- */
+
 .portfolio-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     letter-spacing: 0.02em;
-    color: #2e2f42;
     text-align: center;
     text-transform: capitalize;
+    color: #2e2f42;
     margin-bottom: 72px;
 }
 
@@ -370,17 +361,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     gap: 48px 24px;
 }
 
-.portfolio-container {
+.portfolio-cover-container {
     position: relative;
     overflow: hidden;
 }
 
-.portfolio-list-item {
+.portfolio-item {
     width: calc((100% - 48px) / 3);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-it-text {
+.portfolio-cover-text {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -396,17 +387,17 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list-item:hover {
+.portfolio-item:hover {
     position: relative;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
         0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-list-item:hover .portfolio-it-text {
+.portfolio-item:hover .portfolio-cover-text {
     transform: translateY(0);
 }
 
-.portfolio-item-pro {
+.portfolio-item-descr {
     border-bottom: 1px solid #e7e9fc;
     border-left: 1px solid #e7e9fc;
     border-right: 1px solid #e7e9fc;
@@ -422,12 +413,13 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     margin-bottom: 8px;
 }
 
-.portfolio-text {
+.portfolio-descr {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
 }
+
+/* ---------------------------------------------FOOTER--------------------------------------------- */
 
 .footer {
     background: #2e2f42;
@@ -440,12 +432,11 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     align-items: baseline;
 }
 
-
 .footer-logo-container {
     margin-right: 120px;
 }
 
-.footer-logo-first {
+.footer-logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -457,12 +448,11 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     display: inline-block;
 }
 
-.footer-logo-second {
+.footer-logo-item {
     color: #f4f4fd;
 }
 
-.footer-text {
-    font-weight: 400;
+.footer-descr {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -470,7 +460,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     max-width: 264px;
 }
 
-.footer-media {
+.footer-soc-media {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -575,6 +565,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     background-color: #31d0aa;
 }
 
+/* ---------------------------------------------MODAL FORM--------------------------------------------- */
 
 .backdrop {
     position: fixed;
@@ -687,7 +678,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     border-color: #4d5ae5;
 }
 
-.modal-input:focus + .modal-icon {
+.modal-input:focus+.modal-icon {
     fill: #4d5ae5;
 }
 
@@ -768,7 +759,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     cursor: pointer;
 }
 
-.modal-check:checked + .checkbox-policy-text span {
+.modal-check:checked+.checkbox-policy-text span {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
